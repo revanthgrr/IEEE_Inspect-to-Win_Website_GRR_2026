@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="home">
       <div className="logos">
-      <img height="120px" width="150px" src="./public/IEEE Edsoc LOGO.png"></img>
+      <img height="120px" width="150px" src="IEEE EdSoc LOGO.png"></img>
       <img height="120px" width="150px" src="IEEE PES LOGO.png"></img>
       <img height="120px" width="150px" src="IEEE RAS LOGO.png"></img>
       <img height="120px" width="150px" src="IEEE AESS LOGO.png"></img>
