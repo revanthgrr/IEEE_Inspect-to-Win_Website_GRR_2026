@@ -9,3 +9,6 @@ export default function NotFoundUseful() {
     </div>
   );
 }
+
+/*User-agent: *
+Disallow: /playground/Experimental*/

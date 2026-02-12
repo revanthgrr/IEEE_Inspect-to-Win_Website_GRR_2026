@@ -121,4 +121,5 @@ const cLang=[
   }
 ]
 
+
 export default cLang;

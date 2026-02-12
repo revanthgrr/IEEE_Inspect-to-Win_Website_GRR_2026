@@ -134,7 +134,12 @@ export default function IceBreakerCard({ onClose }) {
     <div className="ice-overlay">
       <div className="ice-card">
         <h2>🎭 Chill Break</h2>
-        <input type="hidden" value="superHidden777" id="hiddenKey"></input>
+  <p className="ice-note">
+           Relax 😌 Timer is paused. Game resumes automatically when chill time ends.Refresh the page to Magic.
+  </p>
+  <button className="ice-skip-btn" onClick={onClose}>
+        Skip ⏭️
+  </button>
         <p className="ice-timer">
           Relax Time Left: {minutes}:{seconds.toString().padStart(2, "0")}
         </p>
@@ -145,13 +150,83 @@ export default function IceBreakerCard({ onClose }) {
           <img className="ice-img" src={randomMeme.img} alt="meme" />
           <img className="ice-gif" src={randomMeme.gif} alt="gif" />
         </div>
-
-        <p className="ice-note">
-           Relax 😌 Timer is paused. Game resumes automatically when chill time ends.Refresh the page to Magic.
-        </p>
       </div>
     </div>
   );
 }
+
+
+// export default function IceBreakerCard({ onClose }) {
+//   // Random meme changes on refresh
+//   const [randomMeme] = useState(() => {
+//     return memes[Math.floor(Math.random() * memes.length)];
+//   });
+
+//   // Icebreaker end time (30 sec) stored in sessionStorage
+//   const [endTime] = useState(() => {
+//     const stored = sessionStorage.getItem("iceEndTime");
+
+//     if (stored) return Number(stored);
+
+//     const newEnd = Date.now() + 30000; // 30 sec
+//     sessionStorage.setItem("iceEndTime", newEnd);
+//     return newEnd;
+//   });
+
+//   const [secondsLeft, setSecondsLeft] = useState(() => {
+//     const diff = Math.floor((endTime - Date.now()) / 1000);
+//     return diff > 0 ? diff : 0;
+//   });
+
+//   useEffect(() => {
+//     const timer = setInterval(() => {
+//       const diff = Math.floor((endTime - Date.now()) / 1000);
+
+//       if (diff <= 0) {
+//         clearInterval(timer);
+//         sessionStorage.removeItem("iceEndTime");
+//         onClose();
+//       } else {
+//         setSecondsLeft(diff);
+//       }
+//     }, 1000);
+
+//     return () => clearInterval(timer);
+//   }, [endTime, onClose]);
+
+//   const minutes = Math.floor(secondsLeft / 60);
+//   const seconds = secondsLeft % 60;
+
+//   return (
+//     <div className="ice-overlay">
+//       <div className="ice-card">
+//         <div className="ice-header">
+//           <h2>🎭 Chill Break</h2>
+//           <button className="ice-skip-btn" onClick={onClose}>
+//             Skip ⏭️
+//           </button>
+//         </div>
+
+//         <input type="hidden" value="superHidden777" id="hiddenKey"></input>
+//         <p className="ice-timer">
+//           Relax Time Left: {minutes}:{seconds.toString().padStart(2, "0")}
+//         </p>
+
+//         <h3 className="ice-title">{randomMeme.title}</h3>
+
+//         <div className="ice-media">
+//           <img className="ice-img" src={randomMeme.img} alt="meme" />
+//           <img className="ice-gif" src={randomMeme.gif} alt="gif" />
+//         </div>
+
+//         <p className="ice-note">
+//           Relax 😌 Timer is paused. Game resumes automatically when chill time ends. Refresh the page to Magic.
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
+
+
 
 

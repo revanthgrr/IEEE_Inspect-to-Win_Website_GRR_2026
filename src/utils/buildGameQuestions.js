@@ -19,10 +19,10 @@ export function buildGameQuestions() {
   const hardInspect = inspectQuestions.filter((q) => q.level === "hard");
 
   // 3 random medium
-  const mediumSelected = shuffle([...mediumInspect]).slice(0, 3);
+  const mediumSelected = shuffle([...mediumInspect]).slice(0, 4);
 
   // 3 random hard
-  const hardSelected = shuffle([...hardInspect]).slice(0, 3);
+  const hardSelected = shuffle([...hardInspect]).slice(0, 2);
 
   // Final ordered list
   const finalQuestions = [

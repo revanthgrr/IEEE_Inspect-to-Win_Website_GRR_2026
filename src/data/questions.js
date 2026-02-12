@@ -2,7 +2,7 @@ const questions = [
   {
     id: 11,
     level: "medium",
-    question: "Which class contains the final answer?",
+    question: "id:11 Which class contains the final answer?",
     options: [".shadow-box", ".final-key", ".secret-lock", ".winner-class"],
     correct: ".final-key",
     hints: {
@@ -28,8 +28,8 @@ const questions = [
   {
     id: 12,
     level: "medium",
-    question: "What is stored in localStorage key 'medium2'?",
-    options: ["storage_777", "local_win", "hidden_storage_key", "medium_answer"],
+    question: "id:12 What is stored in localStorage key 'Treasure'?",
+    options: ["storage_777", "local_win", "M090", "medium_answer"],
     correct: "hidden_storage_key",
     hints: {
       primary: "The console will guide you to the right place.",
@@ -54,7 +54,7 @@ const questions = [
   {
     id: 13,
     level: "medium",
-    question: "What is the hidden text inside div#vault?",
+    question: "id:13 What is the hidden text inside div#vault?",
     options: ["vault_open", "secret_inside_div", "div_lock_777", "inspect_vault"],
     correct: "inspect_vault",
     hints: {
@@ -80,7 +80,7 @@ const questions = [
   {
     id: 14,
     level: "medium",
-    question: "What is the flag hidden in HTML comments?",
+    question: "id:14 What is the flag hidden in HTML comments?",
     options: ["comment_flag_01", "hidden_comment_win", "note_secret", "flag_comment_99"],
     correct: "hidden_comment_win",
     hints: {
@@ -106,7 +106,7 @@ const questions = [
   {
     id: 15,
     level: "medium",
-    question: "What is the secret key inside manifest.json?",
+    question: "id:15 What is the secret key inside shuffle.js?",
     options: ["manifest_unlock", "pwa_secret_key", "manifest_flag_01", "hidden_manifest"],
     correct: "pwa_secret_key",
     hints: {
@@ -132,7 +132,7 @@ const questions = [
   {
     id: 16,
     level: "medium",
-    question: "What is the answer printed only in console?",
+    question: "id:16 What is the answer printed only in console?",
     options: ["console_win", "debug_secret_77", "final_console_flag", "log_answer"],
     correct: "final_console_flag",
     hints: {
@@ -158,7 +158,7 @@ const questions = [
   {
     id: 17,
     level: "medium",
-    question: "Which CSS variable stores the final secret?",
+    question: "id:17 Which CSS variable stores the final secret?",
     options: ["--unlock", "--flag", "--secretKey", "--hiddenVar"],
     correct: "--secretKey",
     hints: {
@@ -184,7 +184,7 @@ const questions = [
   {
     id: 18,
     level: "medium",
-    question: "What is written inside /hidden.txt?",
+    question: "id:18 What is written inside /hidden.txt?",
     options: ["file_secret_77", "hidden_file_win", "robots_answer", "text_flag"],
     correct: "hidden_file_win",
     hints: {
@@ -207,41 +207,11 @@ const questions = [
     }
   },
 
-  {
-    id: 19,
-    level: "medium",
-    question: "What is the flag in API response /api/medium9?",
-    options: ["FLAG{M9}", "FLAG{NETWORK9}", "FLAG{FETCH_WIN}", "FLAG{API_CLUE}"],
-    correct: "FLAG{FETCH_WIN}",
-    hints: {
-      primary: "Refresh the page and watch the network tab.",
-      misleading: "Try checking the console."
-    },
-    targetPages: ["/game"],
-    type: "html-comment-to-network",
-    hide: {
-      step1: {
-        place: "index.html",
-        how: "<!-- CLUE: Refresh page and check Network tab -->",
-        devtoolsTab: "Elements"
-      },
-      step2: {
-        place: "main.js",
-        how: 'fetch("/api/medium9");',
-        devtoolsTab: "Network"
-      },
-      step3: {
-        place: "backend response",
-        how: '{ "flag": "FLAG{FETCH_WIN}" }',
-        devtoolsTab: "Network > Response"
-      }
-    }
-  },
 
   {
     id: 20,
     level: "medium",
-    question: "Which attribute contains the answer?",
+    question: "id:20 Which attribute contains the answer?",
     options: ["data-answer", "data-secret", "data-win", "data-final"],
     correct: "data-secret",
     hints: {
@@ -267,11 +237,11 @@ const questions = [
   {
     id: 21,
     level: "hard",
-    question: "What is the value stored in localStorage key 'hard1_final'?",
+    question: "id:21 What is the value stored in localStorage key 'hard1_final'?",
     options: ["hard_key_77", "final_hard_unlock", "storage_master", "inspect_chain"],
     correct: "inspect_chain",
     hints: {
-      primary: "Follow the chain step by step.",
+      primary: "The Clue is hidden in the HTML page.",
       misleading: "Try checking the footer."
     },
     targetPages: ["/game"],
@@ -298,7 +268,7 @@ const questions = [
   {
     id: 22,
     level: "hard",
-    question: "What is inside div#hardVault?",
+    question: "id:22 What is inside div#hardVault?",
     options: ["vault_777", "hard_div_answer", "final_hidden_box", "deep_inspect_win"],
     correct: "deep_inspect_win",
     hints: {
@@ -329,7 +299,7 @@ const questions = [
   {
     id: 23,
     level: "hard",
-    question: "What is the decoded secret from /secret/base.txt?",
+    question: "id:23 What is the decoded secret from /secret/base.txt?",
     options: ["decode_hard", "hard_decode_win", "inspect_b64_master", "final_b64"],
     correct: "inspect_b64_master",
     hints: {
@@ -360,7 +330,7 @@ const questions = [
   {
     id: 24,
     level: "hard",
-    question: "What is the flag returned from /api/finalHard4?",
+    question: "id:24 What is the flag returned from /api/finalHard4?",
     options: ["FLAG{META}", "FLAG{PWA}", "FLAG{HARD4_WIN}", "FLAG{NETWORK_END}"],
     correct: "FLAG{HARD4_WIN}",
     hints: {
@@ -391,7 +361,7 @@ const questions = [
   {
     id: 25,
     level: "hard",
-    question: "What is the answer hidden in HTML comment?",
+    question: "id:25 What is the answer hidden in HTML comment?",
     options: ["final_comment_77", "hidden_note_hard", "inspect_comment_master", "hard_flag_999"],
     correct: "inspect_comment_master",
     hints: {
@@ -422,7 +392,7 @@ const questions = [
   {
     id: 26,
     level: "hard",
-    question: "What is printed after running the command in console?",
+    question: "id:26 What is printed after running the command in console?",
     options: ["run_me_77", "console_exec_win", "hard_console_flag", "inspect_execute"],
     correct: "inspect_execute",
     hints: {
@@ -453,7 +423,7 @@ const questions = [
   {
     id: 27,
     level: "hard",
-    question: "What is stored in localStorage key 'hard7'?",
+    question: "id:27 What is stored in localStorage key 'hard7'?",
     options: ["hard_store_77", "final_hard7", "inspect_storage_win", "chain_complete"],
     correct: "chain_complete",
     hints: {
@@ -484,30 +454,30 @@ const questions = [
   {
     id: 28,
     level: "hard",
-    question: "What is the secret written inside the JS file comment?",
-    options: ["js_secret_99", "final_bundle_win", "hard_sources_key", "inspect_js_comment"],
-    correct: "inspect_js_comment",
+    question: "id:28 What is the secret value hidden inside the final vault element?",
+    options: ["vault_secret_88", "final_css_unlock", "deep_hidden_key", "inspect_vault_final"],
+    correct: "inspect_vault_final",
     hints: {
-      primary: "Network shows the file. File contains the answer.",
-      misleading: "Try checking cookies."
+      primary: "HTML gives a clue, CSS gives the location, Elements gives the answer.",
+      misleading: "Try checking the network tab."
     },
     targetPages: ["/game"],
-    type: "network-to-sources-to-js-comment",
+    type: "html-to-css-to-hidden-div",
     hide: {
       step1: {
-        place: "backend response",
-        how: '{ "nextFile": "hiddenLogic.js" }',
-        devtoolsTab: "Network > Response"
+        place: "index.html",
+        how: "<!-- STEP1: Check style.css for clue named #vaultHint -->",
+        devtoolsTab: "Elements"
       },
       step2: {
-        place: "hiddenLogic.js",
-        how: "// ANSWER: inspect_js_comment",
-        devtoolsTab: "Sources"
+        place: "style.css",
+        how: "#vaultHint::after { content: \"STEP2: Find element with id=finalVault\"; }",
+        devtoolsTab: "Sources / Elements > Styles"
       },
       step3: {
-        place: "hiddenLogic.js",
-        how: "// keep this file loaded in your project",
-        devtoolsTab: "Sources"
+        place: "index.html",
+        how: "<div id='finalVault' style='display:none;'>inspect_vault_final</div>",
+        devtoolsTab: "Elements"
       }
     }
   },
@@ -515,30 +485,30 @@ const questions = [
   {
     id: 29,
     level: "hard",
-    question: "Which file contains the final secret?",
-    options: ["logo.png", "flag_777.png", "secret_image.png", "winner.jpg"],
-    correct: "flag_777.png",
+    question: "id:29 What is the final secret printed after executing the hidden function?",
+    options: ["console_chain_99", "execute_me_now", "inspect_exec_final", "final_run_flag"],
+    correct: "inspect_exec_final",
     hints: {
-      primary: "Check what loads automatically in the network tab.",
-      misleading: "Try checking style.css"
+      primary: "Storage reveals the element, element reveals the function, function reveals the answer.",
+      misleading: "Try searching in HTML comments."
     },
     targetPages: ["/game"],
-    type: "html-to-network-to-filename",
+    type: "localstorage-to-element-to-console",
     hide: {
       step1: {
-        place: "index.html",
-        how: "<!-- STEP1: Check favicon request in Network -->",
-        devtoolsTab: "Elements"
+        place: "main.js",
+        how: "localStorage.setItem('hard29_clue','Find element with data-run=\"unlockFinal()\"');",
+        devtoolsTab: "Application > LocalStorage"
       },
       step2: {
-        place: "favicon link",
-        how: '<link rel="icon" href="/flag_777.png">',
-        devtoolsTab: "Elements / Network"
+        place: "index.html",
+        how: "<button id='finalBtn' data-run='unlockFinal()'>Final</button>",
+        devtoolsTab: "Elements"
       },
       step3: {
-        place: "Network request",
-        how: "Request file name itself is answer => flag_777.png",
-        devtoolsTab: "Network"
+        place: "main.js",
+        how: "function unlockFinal(){ console.log('inspect_exec_final'); }",
+        devtoolsTab: "Sources / Console"
       }
     }
   },
@@ -546,7 +516,7 @@ const questions = [
   {
     id: 30,
     level: "hard",
-    question: "What is the value stored in the final tooltip?",
+    question: "id:30 What is the value stored in the final tooltip?",
     options: ["tooltip_win", "final_hint_777", "hard_tooltip_secret", "inspect_final_boss"],
     correct: "inspect_final_boss",
     hints: {
@@ -575,6 +545,7 @@ const questions = [
   }
 
 ];
+
 
 export default questions;
 

@@ -23,13 +23,14 @@ export default function Home() {
   return (
     <div className="home">
        <div className="logos">
-       <img height="120px" width="150px" src="IEEE CBIT LOGO.jpg"></img>
-       <img height="120px" width="150px" src="IEEE EdSoc LOGO.png"></img>
-       <img height="120px" width="150px" src="IEEE PES LOGO.png"></img>
-       <img height="120px" width="150px" src="IEEE RAS LOGO.png"></img>
-       <img height="120px" width="150px" src="IEEE AESS LOGO.png"></img>
+       <img height="100px"  src="IEEE EdSoc LOGO.png"></img>
+       <img height="100px"  src="IEEE PES LOGO.png"></img>
+       <img height="100px"  src="IEEE RAS LOGO.png"></img>
+       <img height="100px"  src="IEEE AESS LOGO.png"></img>
        </div>
-      <h1>🔍 Inspect To Win</h1>
+       <h1>Sudhee-2026-Udbhava 3.0</h1>
+       <h1>Stratos</h1>
+      <h3>🔍 Inspect To Win</h3>
 
       <p>
         Welcome to Inspect To Win! A fun debugging challenge where you must use
@@ -43,7 +44,6 @@ export default function Home() {
         <li>🏆 Finish all questions before time runs out</li>
         <li>🚫 Using Third party apps are not Encouraged </li>
       </ul>
-      {console.log("ANSWER: console_is_key")}
       <button className="start-btn" onClick={handleStart}>
         Start Challenge
       </button>

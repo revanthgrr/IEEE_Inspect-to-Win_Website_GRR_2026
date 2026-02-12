@@ -8,6 +8,45 @@ import { GameProvider } from "./context/GameContext";
 
 console.log("ANSWER: console_is_key");
 
+/* id 12 Clue: Check localStorage key 'medium2' for the answer */
+console.log("CLUE: Check localStorage key 'medium2'");
+// id 12 Answer stored in localStorage
+localStorage.setItem('Treasure', 'M090');   
+sessionStorage.setItem('Treasure', 'M090');
+
+// id 16 Answer
+console.log("id:16 final_console_flag");
+// id 17 
+localStorage.setItem("hint7", "Check CSS :root variables");
+
+
+console.log("id:21  Check localStorage key hard1_final");
+
+localStorage.setItem("hard1_final", "inspect_chain");
+
+
+console.log("id 20: Search for attribute data-secret in Elements");
+
+
+console.log("id: 25-STEP1: Check CSS variable --q25-step2");
+
+window.runSecret = function () {
+  console.log("inspect_execute");
+};
+
+
+localStorage.setItem("hard7","chain_complete");
+
+
+localStorage.setItem('hard29_clue','Find element with data-run=\"unlockFinal()\"');
+
+
+window.unlockFinal=function(){
+    console.log('inspect_exec_final');
+}
+
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
 
   <React.StrictMode>

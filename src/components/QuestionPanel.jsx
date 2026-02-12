@@ -35,8 +35,13 @@ export default function QuestionPanel({
 
   return (
     <div className="question-panel">
-      <input type="hidden" value="superHidden777" id="hiddenKey"></input>
+          {data.level === "cLang" || data.level === "pythonLang" ? (
+      <pre className="code-question">
+        <code>{data.question}</code>
+      </pre>
+    ) : (
       <h2>{data.question}</h2>
+    )}
 
       {shuffledOptions.map((option) => (
         <button
