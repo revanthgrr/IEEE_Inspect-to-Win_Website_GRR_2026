@@ -361,6 +361,7 @@ border: 1px solid;
 */
 
 .question-status-bar {
+  position: sticky;
   top: 80px; /* below progress bar */
   left: 50px;
   width: 93.3%;
@@ -377,7 +378,9 @@ border: 1px solid;
   z-index: 997;
   border-bottom: 1px solid rgba(148, 163, 184, 0.25);
   border-radius: 15px;
-}
+} 
+
+
 
 .question-status-bar b {
   color: #2563eb;
