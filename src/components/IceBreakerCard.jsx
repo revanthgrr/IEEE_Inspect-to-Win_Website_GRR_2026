@@ -3,89 +3,72 @@ import { useEffect, useState } from "react";
 const memes = [
   {
     title: "When you remove one console.log and everything breaks 💀",
-    img: "https://i.imgflip.com/4/1bhw.jpg",
-    gif: "https://media.giphy.com/media/l0HlBO7eyXzSZkJri/giphy.gif"
+    img: "https://i.imgflip.com/4/1bhw.jpg"
   },
   {
     title: "When the code works only on your laptop 😭",
-    img: "https://i.imgflip.com/4/3si4.jpg",
-    gif: "https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif"
+    img: "https://i.imgflip.com/4/3si4.jpg"
   },
   {
     title: "When you debug for 3 hours and realize WiFi was off 🤡",
-    img: "https://i.imgflip.com/4/2hgfw.jpg",
-    gif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+    img: "https://i.imgflip.com/4/2hgfw.jpg"
   },
   {
     title: "When you push code without testing and pray 🙏",
-    img: "https://i.imgflip.com/4/1ur9b0.jpg",
-    gif: "https://media.giphy.com/media/3o7aD4o5fJ5pN1pGvC/giphy.gif"
+    img: "https://i.imgflip.com/4/1ur9b0.jpg"
   },
   {
     title: "When the judge says: 'Explain your project in 30 seconds' 😭",
-    img: "https://i.imgflip.com/4/39t1o.jpg",
-    gif: "https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKQ/giphy.gif"
+    img: "https://i.imgflip.com/4/39t1o.jpg"
   },
   {
     title: "When you fix the bug but don’t know how 🤯",
-    img: "https://i.imgflip.com/4/1g8my4.jpg",
-    gif: "https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif"
+    img: "https://i.imgflip.com/4/1g8my4.jpg"
   },
   {
     title: "When your teammate says: 'It works on my machine' 😡",
-    img: "https://i.imgflip.com/4/1jwhww.jpg",
-    gif: "https://media.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif"
+    img: "https://i.imgflip.com/4/1jwhww.jpg"
   },
   {
     title: "When your code finally compiles after 27 errors 😭🔥",
-    img: "https://i.imgflip.com/4/26am.jpg",
-    gif: "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif"
+    img: "https://i.imgflip.com/4/26am.jpg"
   },
   {
     title: "When you realize the bug was a spelling mistake 🥲",
-    img: "https://i.imgflip.com/4/2wifvo.jpg",
-    gif: "https://media.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif"
+    img: "https://i.imgflip.com/4/2wifvo.jpg"
   },
   {
     title: "When you see 'undefined' and your soul leaves your body 👻",
-    img: "https://i.imgflip.com/4/2xscjb.jpg",
-    gif: "https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
+    img: "https://i.imgflip.com/4/2xscjb.jpg"
   },
   {
     title: "When you copy code from StackOverflow and it works immediately 😎",
-    img: "https://i.imgflip.com/4/1yxkcp.jpg",
-    gif: "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif"
+    img: "https://i.imgflip.com/4/1yxkcp.jpg"
   },
   {
     title: "When you forget to save the file and wonder why nothing changes 🤡",
-    img: "https://i.imgflip.com/4/2p3dw.jpg",
-    gif: "https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif"
+    img: "https://i.imgflip.com/4/2p3dw.jpg"
   },
 
   {
     title: "When your code works but you don’t know why 😭",
-    img: "https://i.imgflip.com/4/4t0m5.jpg",
-    gif: "https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif"
+    img: "https://i.imgflip.com/4/4t0m5.jpg"
   },
   {
     title: "When you fix one bug and 10 new bugs appear 💀",
-    img: "https://i.imgflip.com/4/1bij.jpg",
-    gif: "https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif"
+    img: "https://i.imgflip.com/4/1bij.jpg"
   },
   {
     title: "When you push to main branch without testing 🤡",
-    img: "https://i.imgflip.com/4/1otk96.jpg",
-    gif: "https://media.giphy.com/media/9M5jK4GXmD5o1irGrF/giphy.gif"
+    img: "https://i.imgflip.com/4/1otk96.jpg"
   },
   {
     title: "When your senior says 'just a small change' 💀",
-    img: "https://i.imgflip.com/4/30b1gx.jpg",
-    gif: "https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif"
+    img: "https://i.imgflip.com/4/30b1gx.jpg"
   },
   {
     title: "When the bug disappears in demo 😭",
-    img: "https://i.imgflip.com/4/2cp1.jpg",
-    gif: "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif"
+    img: "https://i.imgflip.com/4/2cp1.jpg"
   }
 ];
 
