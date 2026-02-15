@@ -45,10 +45,10 @@ const memes = [
     title: "When you copy code from StackOverflow and it works immediately 😎",
     img: "https://i.imgflip.com/4/1yxkcp.jpg"
   },
-  {
-    title: "When you forget to save the file and wonder why nothing changes 🤡",
-    img: "https://i.imgflip.com/4/2p3dw.jpg"
-  },
+  // {
+  //   title: "When you forget to save the file and wonder why nothing changes 🤡",
+  //   img: "https://i.imgflip.com/4/2p3dw.jpg"
+  // },
 
   {
     title: "When your code works but you don’t know why 😭",
@@ -117,12 +117,12 @@ export default function IceBreakerCard({ onClose }) {
     <div className="ice-overlay">
       <div className="ice-card">
         <h2>🎭 Chill Break</h2>
-  <p className="ice-note">
-           Relax 😌 Timer is paused. Game resumes automatically when chill time ends.Refresh the page to Magic.
-  </p>
-  <button className="ice-skip-btn" onClick={onClose}>
-        Skip ⏭️
-  </button>
+        <p className="ice-note">
+          Relax 😌 Timer is paused. Game resumes automatically when chill time ends.Refresh the page to Magic.
+        </p>
+        <button className="ice-skip-btn" onClick={onClose}>
+          Skip ⏭️
+        </button>
         <p className="ice-timer">
           Relax Time Left: {minutes}:{seconds.toString().padStart(2, "0")}
         </p>
