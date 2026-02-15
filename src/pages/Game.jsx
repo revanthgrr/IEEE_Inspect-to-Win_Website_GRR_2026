@@ -170,9 +170,9 @@ export default function Game() {
         />
 
         <CluePanel
-        type={shuffledQuestions[index].type}
-        hints={shuffledQuestions[index].hints}
-       />
+          type={shuffledQuestions[index].type}
+          hints={shuffledQuestions[index].hints}
+        />
 
       </div>
     </>
