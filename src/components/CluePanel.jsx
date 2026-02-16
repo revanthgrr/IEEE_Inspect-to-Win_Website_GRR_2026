@@ -1,4 +1,4 @@
-export default function CluePanel({ type,hints }) {
+export default function CluePanel({ type, hints }) {
 
   const primaryHint =
     typeof hints === "string" ? hints : hints?.primary;
@@ -14,17 +14,17 @@ export default function CluePanel({ type,hints }) {
   if (type === "image-alt") {
     return <img src="/broken.png" alt="ALT_TEXT" />;
   }
-  
+
   return (
     <div className="clue">
-    <h2>🔍 Hint Panel</h2>
-  
-    <p>{primaryHint}</p>
-    {/* <p><b>Misleading Hint:</b> {hints?.misleading}</p> */}
-  
-    <div className="ghost-hint">
+      <h2>🔍 Hint Panel</h2>
+
+      <p>{primaryHint}</p>
+      {/* <p><b>Misleading Hint:</b> {hints?.misleading}</p> */}
+
+      {/* <div className="ghost-hint">
       {type}
+    </div> */}
     </div>
-  </div>
   );
 }
